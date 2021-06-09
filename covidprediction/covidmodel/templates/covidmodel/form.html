@@ -1,0 +1,17 @@
+{% extends 'covidmodel/base.html' %}
+
+
+{% block title %}
+<title>Form </title>
+{% endblock title %}
+
+{% block body %}
+
+
+    <div class="container my-5">
+   <form action="" method="post" class="form-control">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button type="submit" class="btn btn-primary">Submit</button>              </form>
+        </div>
+{% endblock body %}

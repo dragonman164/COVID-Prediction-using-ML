@@ -1,0 +1,21 @@
+{% extends 'covidmodel/base.html' %}
+
+
+
+{% block title %}
+<title>
+Final Test Results!!!!
+</title>
+{% endblock title %}
+
+
+{% block body %}
+<div class="container my-5 mx-5">
+<h1>You are <strong style="color:red">Covid Positive !!!!!</strong></h1>
+<h1>You are <strong style="color:green">Covid Negative !!!!!</strong></h1>
+<h3 class="my-5">Test Accuracy Results : {{accuracy}}</h3>
+<p>***Note: Test Results are based on the dataset used by the machine learning.
+These results may not be 100% accurate</p>
+
+</div> 
+{% endblock body %}

@@ -1,0 +1,26 @@
+{% extends 'covidmodel/base.html' %}
+
+{% block title %}
+<title>Welcome to Covid Predictor </title>
+{% endblock title %}
+
+
+{% block body %}
+
+    <div class="container my-5">
+        <h1 class="font-italic">Introduction</h1>
+        <p class="py-2 my-3">This is a simple web app that predicts whether the person being tested is <strong style="color:red">Covid Positve</strong> or <strong style="color:green">negative</strong>.
+        This Web App works through a Machine Learning Model which runs on the backend to predict the results. These results include basic symtomps like 
+        fever, headache, cough , difficulty in breathing etc. It is strictly adviced not to rely on the results of this web application because this
+        application is still in testing phase
+        </p>
+    </div>
+
+    <div class="container">
+    {% load static %}
+    <img src="{% static 'covidmodel/covid_testing_cartoon.png' %}" class="img-fluid" alt="..." style="height:350px;width:auto">
+    </div>
+
+
+{% endblock body %}
+
